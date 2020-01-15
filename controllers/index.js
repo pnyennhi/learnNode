@@ -3,6 +3,11 @@ index = function(req, res, next) {
   res.render("index", { title: name });
 };
 
+index1 = function(req, res, next) {
+  res.render("index", { title: "Express" });
+};
+
 module.exports = {
-  index: index
+  index: index,
+  index1: index1
 };
